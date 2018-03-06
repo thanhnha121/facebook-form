@@ -1,11 +1,12 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-}
-
-html {
+﻿html {
     display: table;
     margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .ff-wrapper {
@@ -28,21 +29,12 @@ html {
         display: inline-block;
     }
 
-.ff-text-left,
-.ff-text-left2,
-.ff-text-left3,
-.ff-text-right,
-.ff-text-right2,
-.ff-text-right3
+.ff-text
 {
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 12px;
     background: #f1f0f0;
     min-height: 15px;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    border-radius: 12px;
     padding: 6px 8px;
     max-width: 168px;
     color: #4b4f56;
@@ -50,36 +42,44 @@ html {
     display: inline-block;
 }
 
-.ff-text-right,
-.ff-text-right2,
-.ff-text-right3
+.ff-list-menu-button
 {
-    float: right;
+    border: 1px solid rgba(0, 0, 0, .18);
+    width: 188px;
+    margin-top: 1px;
+    border-radius: 12px;
 }
 
-.ff-text-left2 {
-    border-bottom-left-radius: 2px;
+    .ff-list-menu-button > .ff-menu-button
+    {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+        color: #365899;
+        cursor: pointer;
+        
+    }
+
+        .ff-list-menu-button > .ff-menu-button:not(:last-child)
+        {
+            border-bottom: 1px solid rgba(0, 0, 0, .18);
+        }
+
+.ff-code {
+    font-family: Menlo, Consolas, Monaco, monospace;
+    padding: 10px;
+    background: #fdf5d4;
+    border: 1px solid #f1c40f;
+    color: #1d2129;
+    border-radius: 12px;
+    display: inline-block;
+    max-width: 168px;
 }
 
-.ff-text-right2 {
-    border-bottom-right-radius: 2px;
-}
-
-.ff-text-left3 {
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-.ff-text-right3 {
-    border-bottom-right-radius: 2px;
-    border-top-right-radius: 2px;
-}
-
-.ff-menu-left {
-    
-}
-
-.float-right {
+/* COMMON */
+.ff-float-right {
     float: right;
 }
 
@@ -88,3 +88,26 @@ html {
     color: #fff;
 }
 
+.ff-full-width {
+    width: 100%;
+}
+
+.ff-display-inline-block {
+    display: inline-block;
+}
+
+.ff-small-rounder-top-left {
+    border-top-left-radius: 2px;
+}
+
+.ff-small-rounder-top-right {
+    border-top-right-radius: 2px;
+}
+
+.ff-small-rounder-bottom-left {
+    border-bottom-left-radius: 2px;
+}
+
+.ff-small-rounder-bottom-right {
+    border-bottom-right-radius: 2px;
+}
